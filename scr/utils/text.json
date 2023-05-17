@@ -1,0 +1,166 @@
+[
+    {
+        "title": "esto es un cambio",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 0
+    },
+    {
+        "title": "esto es un cambio",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 1
+    },
+    {
+        "title": "producto prueba_4",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 3
+    },
+    {
+        "title": "producto prueba_5",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 4
+    },
+    {
+        "title": "producto prueba_6",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 5
+    },
+    {
+        "title": "producto prueba_7",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 6
+    },
+    {
+        "title": "producto prueba_8",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 7
+    },
+    {
+        "title": "producto prueba_9",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 8
+    },
+    {
+        "title": "producto prueba_10",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 9
+    },
+    {
+        "title": "Hola mundo",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 10
+    },
+    {
+        "title": "producto prueba_12",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 11
+    },
+    {
+        "title": "producto prueba_12",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "Sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 12
+    },
+    {
+        "title": "producto prueba_12",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 13
+    },
+    {
+        "title": "producto prueba_12",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 14
+    },
+    {
+        "title": "producto prueba_12",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "hola",
+        "code": "abc123",
+        "stock": 25,
+        "id": 15
+    },
+    {
+        "title": "producto prueba_12",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 16
+    },
+    {
+        "title": "producto prueba_20",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "sin imagen",
+        "code": "abc123",
+        "stock": 25,
+        "id": 17
+    },
+    {
+        "title": "producto prueba_20",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "sin imagen",
+        "status": true,
+        "category": "clothes",
+        "code": "abc123",
+        "stock": 25,
+        "id": 18
+    }
+]
