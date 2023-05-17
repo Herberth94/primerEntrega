@@ -3,7 +3,7 @@ import { __dirname } from './utils.js';
 export class ProductManager {
     constructor(){
         this.product =[]
-        this.path = __dirname +'/text.json'
+        this.path = __dirname +'/productos.json'
         if(fs.existsSync(this.path)){
             console.log("El archivo EXISTE!");
          }else{

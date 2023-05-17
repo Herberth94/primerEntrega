@@ -11,4 +11,5 @@ routerProducts.get('/:pid',productsController.pidProducts);
 routerProducts.post('/',productsController.addProducts);
 // Ruta para eliminar un producto por su ID
 routerProducts.delete('/:pid',productsController.deleteProducts);
+// Ruta para actualizar un campo y su valor por medio del ID
 routerProducts.put('/:pid',productsController.updateProducts);

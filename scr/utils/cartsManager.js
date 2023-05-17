@@ -4,7 +4,7 @@ export class cartsManager {
     constructor(){
         this.carts = '';
         this.products = {};
-        this.path = __dirname +'/carts.json';
+        this.path = __dirname +'/carrito.json';
         if(fs.existsSync(this.path)){
             console.log("El archivo EXISTE!");
          }else{
