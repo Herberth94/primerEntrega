@@ -1,7 +1,7 @@
 Indicaciones:
 **************************************************************************************************************************
 GET- http://localhost:8080/api/products  : Mostrara todos los productos almacenados.
-GET- http://localhost:8080/api/products?limit=5 : Mostrara el numero de productos deseado el numero "5" se pude modificar.
+GET- http://localhost:8080/api/products?limit=5 : Mostrara un limite de los  productos deseado el numero "5" se pude modificar.
 GET- http://localhost:8080/api/products/:pid : Mostrara un producto especifico por su Id.
 POST- http://localhost:8080/api/products  : Agrera un nuevo producto, ejemplo objeto que se envia:
 {
