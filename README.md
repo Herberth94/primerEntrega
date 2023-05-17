@@ -10,8 +10,8 @@ POST- http://localhost:8080/api/products  : Agrera un nuevo producto, ejemplo ob
         "price": 200,
         "thumbnail": "sin imagen",
         "code": "abc123",
-	    "status" : true,
-	    "category":"clothes",
+	"status" : true,
+	"category":"clothes",
         "stock": 25
 }
 
@@ -23,3 +23,13 @@ UPDATE- http://localhost:8080/api/products/:pid  : Modificar un campo de un prod
 }
 
 **************************************************************************************************************************
+ 
+POST- http://localhost:8080/api/carts  : Crea un nuevo carrito con la siguiente estructura 
+
+{
+        id:"id carrito"
+        products: []
+}
+
+GET- http://localhost:8080/api/carts/:cid  : Muestra un carrito con un Id especifico 
+POST- http://localhost:8080/api/carts/:cid/product/:pid   : Permite agregar el id de un producto a un carrito especifico por medio del cid
