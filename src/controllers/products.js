@@ -4,14 +4,13 @@ const productsController = {}
 productsController.allProducts = async(req, res)=>{
     try {
         const allProduct = await product.getProducts();
-        const consulta = req.query
-        const setLimit = Object.keys(consulta).length;
-        if(setLimit == 0){
+        const {limit} = req.query
+        if(parseInt(limit) == 0){
            
            res.status(200).send({status:'success',data:allProduct});
            }
         else{
-           const newArray = allProduct.slice(0,consulta.limit)
+           const newArray = allProduct.slice(0,limit)
            res.status(200).send({status:'success',data:newArray});
            
         }
@@ -35,6 +34,7 @@ productsController.pidProducts = async(req,res)=>{
 }
 productsController.addProducts = async (req,res)=>{
     try {
+      console.log(1)
         let {title,description,price,thumbnail,status,category,code,stock}= req.body
         if(thumbnail==''){ thumbnail = 'sin imagen'}
         const result = await product.addProduct(title,description,price,thumbnail,status,category,code,stock);

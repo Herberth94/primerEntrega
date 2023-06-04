@@ -1,0 +1,57 @@
+[
+    {
+        "title": "producto prueba_3",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "nn",
+        "status": true,
+        "category": "clothes",
+        "code": "abc12553",
+        "stock": 25,
+        "id": 0
+    },
+    {
+        "title": "producto prueba_3",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "nn",
+        "status": true,
+        "category": "clothes",
+        "code": "abc1253",
+        "stock": 25,
+        "id": 1
+    },
+    {
+        "title": "producto prueba_3",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "nn",
+        "status": true,
+        "category": "clothes",
+        "code": "abc12563",
+        "stock": 25,
+        "id": 2
+    },
+    {
+        "title": "producto prueba_3",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "nn",
+        "status": true,
+        "category": "clothes",
+        "code": "abc",
+        "stock": 25,
+        "id": 3
+    },
+    {
+        "title": "producto prueba_3",
+        "description": "Este es un producto prueba",
+        "price": 200,
+        "thumbnail": "sin imagen",
+        "status": true,
+        "category": "clothes",
+        "code": "abc8",
+        "stock": 25,
+        "id": 4
+    }
+]

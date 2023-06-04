@@ -8,7 +8,7 @@ export class ProductManager {
             console.log("El archivo EXISTE!");
          }else{
             console.log("El archivo NO EXISTE!");
-            fs.writeFile(this.path,'[]',(error)=>{
+            fs.writeFile(this.path,'',(error)=>{
                if (error) throw error;
             })
         }
@@ -17,6 +17,13 @@ export class ProductManager {
      #verificationProducts(newProduct){
         const verificationNewProduct = Object.values(newProduct).some((values)=>values === null || values === undefined || values === '');
         return(verificationNewProduct);
+    }
+   async  #verificationCode (code){
+        let readFile = await fs.promises.readFile(this.path,'utf-8');
+            readFile = JSON.parse(readFile)
+        const searchCode = readFile.map((value)=>  value.code !== code)
+              
+        return searchCode.includes(false)
     }
     // Método que muesta en consola todos los productos agregados al archivo JSON
     async getProducts(){
@@ -40,7 +47,6 @@ export class ProductManager {
         status,
         category,
         code,
-
         stock
         )
         {
@@ -54,11 +60,13 @@ export class ProductManager {
         code: code,
         stock:stock,
        }
+       console.log(2)
        // Verifica si el producto tiene todos sus campos llenos
        const verification = this.#verificationProducts(newProduct);
        // Lee el archivo text.json
+       
        const readFile = await fs.promises.readFile(this.path,'utf-8');
-       //console.log(readFile)
+       console.log(readFile)
        if(!verification){
            if(readFile == ""){
             // Agrega id = 0 al Objeto creado
@@ -70,12 +78,22 @@ export class ProductManager {
            }
            else{
               // Transforma los datos JSON en un Objeto de JS
-              let newArray =(JSON.parse(readFile));
-              let id = newArray.length;
-              newProduct = {...newProduct,id:id};
-              newArray.push(newProduct);
-              await fs.promises.writeFile(this.path,JSON.stringify(newArray));
-              return true
+              const codeVerification = await this.#verificationCode(newProduct.code)
+              console.log(codeVerification)
+              let doubleVerification = !verification && !codeVerification
+              console.log(doubleVerification)
+              if(doubleVerification){
+                let newArray =(JSON.parse(readFile));
+                let id = newArray.length;
+                  id = newArray[id-1].id + 1;
+                newProduct = {...newProduct,id:id};
+                newArray.push(newProduct);
+                await fs.promises.writeFile(this.path,JSON.stringify(newArray));
+                return true
+              }
+              else{ return false}
+
+              
                          
            }
 
